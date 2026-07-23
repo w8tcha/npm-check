@@ -11,7 +11,7 @@
   "typings": "./index.d.ts",
   "scripts": {
     "lint": "xo",
-    "test": "npm run lint && node bin/cli.js || exit 0"
+    "test": "npm run lint && (node bin/cli.js || exit 0)"
   },
   "xo": [
     {
