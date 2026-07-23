@@ -47,5 +47,6 @@ declare module NpmCheck {
 }
 
 declare module "npm-check" {
-    export = NpmCheck.default;
+    const npmCheck: typeof NpmCheck.default;
+    export default npmCheck;
 }

@@ -2,7 +2,7 @@ npm-check
 =========
 [![Build Status](https://travis-ci.org/dylang/npm-check.svg?branch=master)](https://travis-ci.org/dylang/npm-check)
 [![NPM version](https://badge.fury.io/js/npm-check.svg)](http://badge.fury.io/js/npm-check)
-[![npm](https://img.shields.io/npm/dm/npm-check.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/dm/npm-check.svg?maxAge=2592000)](https://www.npmjs.com/package/npm-check)
 
 > Check for outdated, incorrect, and unused dependencies.
 
@@ -48,7 +48,7 @@ When updates are required it will return a non-zero response code that you can u
 
 ### Options
 
-```
+```text
 Usage
   $ npm-check <path> <options>
 
@@ -176,7 +176,7 @@ Enable or disable the spinner. Useful for terminals that don't support them. Aut
 The API is here in case you want to wrap this with your CI toolset.
 
 ```js
-const npmCheck = require('npm-check');
+import npmCheck from 'npm-check';
 
 npmCheck(options)
   .then(currentState => console.log(currentState.get('packages')));
@@ -270,7 +270,7 @@ You will also see this if you use `--debug` on the command line.
 Additional options can be sent to the depcheck process.  See [depcheck API](https://github.com/depcheck/depcheck#api).  Create a .npmcheckrc{.json,.yml,.js} file and set the depcheck options under depcheck property.
 
 For example, to skip packages for unused check, but still want them in the outdated check (so can't use the --ignore option):
-```
+```yaml
 # .npmcheckrc
 
 depcheck:
