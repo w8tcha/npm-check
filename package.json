@@ -1,6 +1,6 @@
 {
   "name": "@w8tcha/npm-check",
-  "version": "6.0.1",
+  "version": "7.0.0",
   "description": "Check for outdated, incorrect, and unused dependencies.",
   "type": "module",
   "main": "./lib/index.js",
