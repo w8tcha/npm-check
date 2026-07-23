@@ -1,0 +1,8 @@
+{
+    "name": "outdated-project-fixture",
+    "version": "1.0.0",
+    "dependencies": {
+        "left-pad-fixture": "^1.0.0",
+        "missing-fixture": "^2.0.0"
+    }
+}

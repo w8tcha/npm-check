@@ -1,0 +1,8 @@
+{
+    "name": "unused-project-fixture",
+    "version": "1.0.0",
+    "dependencies": {
+        "used-fixture": "^1.0.0",
+        "unused-fixture": "^1.0.0"
+    }
+}
