@@ -1,4 +1,6 @@
-npm-check
+# npm-check
+
+This package is a fork of [`npm-check`](https://github.com/dylang/npm-check).
 =========
 [![Build Status](https://github.com/w8tcha/npm-check/actions/workflows/tests.yml/badge.svg)](https://github.com/w8tcha/npm-check/actions)
 [![NPM version](https://badge.fury.io/js/npm-check.svg)](http://badge.fury.io/js/npm-check)
@@ -24,7 +26,7 @@ npm-check
 * Works with `npm@2` and `npm@3`, as well as newer alternative installers like `ied` and `pnpm`.
 
 ### Requirements
-* Node >= 10.9.0
+* Node >= 24.18.0
 
 ### On the command line
 
