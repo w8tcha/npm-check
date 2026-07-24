@@ -1,7 +1,7 @@
 # npm-check
 
 This package is a fork of [`npm-check`](https://github.com/dylang/npm-check).
-=========
+
 [![Build Status](https://github.com/w8tcha/npm-check/actions/workflows/tests.yml/badge.svg)](https://github.com/w8tcha/npm-check/actions)
 [![NPM version](https://badge.fury.io/js/npm-check.svg)](http://badge.fury.io/js/npm-check)
 [![npm](https://img.shields.io/npm/dm/npm-check.svg?maxAge=2592000)](https://www.npmjs.com/package/npm-check)
