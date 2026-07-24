@@ -46,7 +46,7 @@ declare module NpmCheck {
   
 }
 
-declare module "npm-check" {
+declare module "@w8tcha/npm-check" {
     const npmCheck: typeof NpmCheck.default;
     export default npmCheck;
 }

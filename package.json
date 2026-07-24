@@ -30,7 +30,7 @@
     }
   ],
   "bin": {
-    "npm-check": "bin/cli.js"
+    "@w8tcha/npm-check": "bin/cli.js"
   },
   "repository": {
     "type": "git",
