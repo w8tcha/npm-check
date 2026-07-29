@@ -4,7 +4,7 @@ This package is a fork of [`npm-check`](https://github.com/dylang/npm-check).
 
 [![Build Status](https://github.com/w8tcha/npm-check/actions/workflows/tests.yml/badge.svg)](https://github.com/w8tcha/npm-check/actions)
 [![npm version](https://badge.fury.io/js/@w8tcha%2Fnpm-check.svg)](https://badge.fury.io/js/@w8tcha%2Fnpm-check)
-[![npm](https://img.shields.io/npm/dm/@w8tcha%2Fnnpm-check.svg?maxAge=2592000)](https://www.npmjs.com/package/@w8tcha/npm-check)
+[![npm](https://img.shields.io/npm/dm/%40w8tcha%2Fnpm-check.svg?maxAge=2592000)](https://www.npmjs.com/package/@w8tcha/npm-check)
 
 > Check for outdated, incorrect, and unused dependencies.
 
