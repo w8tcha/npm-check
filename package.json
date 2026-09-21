@@ -2,41 +2,34 @@
   "name": "@w8tcha/npm-check",
   "version": "7.0.0",
   "description": "Check for outdated, incorrect, and unused dependencies.",
+  "license": "MIT",
+  "repository": "github:w8tcha/npm-check",
+  "homepage": "https://github.com/w8tcha/npm-check",
+  "bugs": "https://github.com/w8tcha/npm-check/issues",
+  "author": "Dylan Greene <dylang@gmail.com>",
   "type": "module",
-  "main": "./lib/index.js",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./lib/index.js"
+  },
+  "bin": {
+    "@w8tcha/npm-check": "./bin/cli.js"
+  },
+  "sideEffects": false,
   "engines": {
     "node": ">=24.18.0"
   },
-  "types": "./index.d.ts",
-  "typings": "./index.d.ts",
   "scripts": {
     "lint": "xo",
     "test:unit": "node --experimental-test-module-mocks --test \"test/unit/*.test.js\"",
     "test": "npm run lint && npm run test:unit && (node bin/cli.js || exit 0)",
     "update-deps": "node ./bin/cli.js -u"
   },
-  "xo": [
-    {
-      "ignores": [
-        "index.d.ts"
-      ]
-    },
-    {
-      "space": 4,
-      "rules": {
-        "no-warning-comments": [
-          0
-        ]
-      }
-    }
+  "files": [
+    "index.d.ts",
+    "bin",
+    "lib"
   ],
-  "bin": {
-    "@w8tcha/npm-check": "bin/cli.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/w8tcha/npm-check.git"
-  },
   "keywords": [
     "npm",
     "outdated",
@@ -52,20 +45,7 @@
     "updating",
     "updater",
     "installer",
-    "devDependencies"
-  ],
-  "author": {
-    "name": "Dylan Greene",
-    "email": "dylang@gmail.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/w8tcha/npm-check/issues"
-  },
-  "homepage": "https://github.com/w8tcha/npm-check",
-  "files": [
-    "bin",
-    "lib"
+    "devdependencies"
   ],
   "dependencies": {
     "callsite-record": "^4.1.5",
@@ -96,5 +76,29 @@
   },
   "devDependencies": {
     "xo": "^5.0.1"
-  }
+  },
+  "xo": [
+    {
+      "ignores": [
+        "index.d.ts",
+        "test/fixtures/**"
+      ]
+    },
+    {
+      "space": 4,
+      "rules": {
+        "no-warning-comments": [
+          0
+        ]
+      }
+    },
+    {
+      "files": [
+        "test/unit/*.test.js"
+      ],
+      "rules": {
+        "node-test/no-import-test-files": "off"
+      }
+    }
+  ]
 }
